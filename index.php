@@ -38,13 +38,13 @@ and open the template in the editor.
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input type="text" id='inpnome' class="form-control" placeholder="Nome">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">Endereco</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="Endereco">
+                                <input type="text"  class="form-control" placeholder="Endereco">
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-2 control-label">Sexo</label>
@@ -68,7 +68,7 @@ and open the template in the editor.
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit"  class="btn btn-success">Cadastrar</button>
+                                    <button type="submit" id='btn-enviar'  class="btn btn-success">Cadastrar</button>
                                 </div>
                             </div>
                     </form>
@@ -79,6 +79,24 @@ and open the template in the editor.
                         <div class="col-md-6">
                             Listagem de Pessoas
                         </div>
+                        
+                        
+                        
+                        <script>
+                        
+                        $('#btn-enviar').click(function()){
+                          if($('#inpnome').val()==''){
+                              alert('prencha o nome');
+                          }
+                            
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        </script>
 
 
 
